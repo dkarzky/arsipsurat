@@ -25,13 +25,7 @@
         <tr><th class="pe-4">Nama</th><td>: {{ $name }}</td></tr>
         <tr><th class="pe-4">NIM</th><td>: {{ $nim }}</td></tr>
         <tr><th class="pe-4">Prodi</th><td>: {{ $prodi }}</td></tr>
-        <tr><th class="pe-4">Tanggal</th><td>: {{ $date }}</td></tr>
-        <tr>
-          <th class="pe-4">Repository</th>
-          <td>:
-            <a href="https://github.com/dkarzky/arsipsurat" target="_blank" rel="noopener">github.com/dkarzky/arsipsurat</a>
-          </td>
-        </tr>
+        
       </table>
     </div>
   </div>
