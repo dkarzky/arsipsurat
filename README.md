@@ -23,25 +23,24 @@ Menyediakan sistem pengarsipan surat sederhana untuk menambah, mencari, melihat,
 1) Buat database MySQL bernama `arsip_surat`
 2) Salin `.env.example` menjadi `.env` lalu sesuaikan kredensial DB bila perlu:
 
-```
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=arsip_surat
 DB_USERNAME=root
 DB_PASSWORD=
-```
+
 
 3) Install dan siapkan aplikasi:
 
-```
 composer install
 php artisan key:generate
 php artisan migrate
 php artisan db:seed --class=CategorySeeder
 php artisan storage:link
 php artisan serve
-```
+
 
 4) Buka http://127.0.0.1:8000
 
@@ -55,12 +54,11 @@ php artisan serve
 ## Konfigurasi Halaman About
 Atur data di `.env`:
 
-```
+
 ABOUT_NAME="Nama Anda"
 ABOUT_NIM="NIM Anda"
 ABOUT_PRODI="D3-MANAJEMEN INFORMATIKA"
 ABOUT_PHOTO="/images/profile.jpg"
-```
 
 
 ## Screenshot
@@ -75,22 +73,6 @@ Letakkan tangkapan layar di folder `screenshots/` dan referensikan di bawah ini.
 4. Halaman About
 	- ![About](screenshots/about.png)
 
-
-## Checklist Ketentuan
-- [x] Pencarian surat
-- [x] CRUD Arsip Surat (unggah PDF)
-- [x] Pratinjau dan unduh PDF
-- [x] CRUD Kategori surat
-- [x] Konfirmasi hapus
-- [x] Halaman About
-- [x] Dokumentasi + Screenshot
-- [x] Database (.sql)
-
-## Troubleshooting
-- Preview PDF tidak muncul → jalankan `php artisan storage:link` lalu refresh.
-- Error DB “Unknown database 'arsip_surat'” → buat database di phpMyAdmin dan cek `.env`.
-- Konflik tabel `sessions` → jalankan migrasi ulang: `php artisan migrate:fresh` (hati-hati: data hilang).
-- File lama tidak terhapus saat ganti PDF → pastikan izin folder `storage/app/public/arsip` benar.
 
 
 
