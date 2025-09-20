@@ -74,4 +74,3 @@ Letakkan tangkapan layar di folder `screenshots/` dan referensikan di bawah ini.
 
 ---
 
-Hak cipta © 2025. Dirancang untuk kebutuhan pembelajaran dan demonstrasi.
