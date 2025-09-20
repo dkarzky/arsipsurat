@@ -2,8 +2,6 @@
 
 Sebuah aplikasi Laravel untuk mengarsipkan surat: unggah PDF, pencarian, kategori surat, pratinjau, unduh, dan pengelolaan data.
 
-Repository: https://github.com/dkarzky/arsipsurat
-
 ## Tujuan
 Menyediakan sistem pengarsipan surat sederhana untuk menambah, mencari, melihat, mengunduh, dan mengelola kategori surat, dengan antarmuka modern dan mudah digunakan.
 
@@ -21,7 +19,7 @@ Menyediakan sistem pengarsipan surat sederhana untuk menambah, mencari, melihat,
 - MySQL (Laragon)
 - Bootstrap 5 + Bootstrap Icons
 
-## Cara Menjalankan (Windows PowerShell)
+## Cara Menjalankan
 1) Buat database MySQL bernama `arsip_surat` (Laragon: http://localhost/phpmyadmin)
 2) Salin `.env.example` menjadi `.env` lalu sesuaikan kredensial DB bila perlu:
 ```
